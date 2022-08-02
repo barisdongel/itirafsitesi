@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>İtiraf Sitesi</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <!--ust nav-->
+        <nav class="navbar navbar-expand-lg bg-main navbar-dark">
+            <div class="container-fluid container">
+                <img src="logo.png" alt="logo" width="250" class="m-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                    <form class="w-75 search" role="search">
+                        <div class="input-group mb-3 input-icons">
+                            <input type="text" class="form-control text-light rounded-pill search-input"
+                                placeholder="İtiraf Ara...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--alt nav-->
+        <nav class="navbar navbar-expand-lg bg-main navbar-dark montserrat fst-italic fw-bold">
+            <div class="container-fluid container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-stack-exchange"></i> Genel</a>
+                        </li>
+                        <li class="nav-item ml-45">
+                            <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i> Aşk</a>
+                        </li>
+                        <li class="nav-item ml-45">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Aile</a>
+                        </li>
+                        <li class="nav-item ml-45">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-user-group"></i> Arkadaş</a>
+                        </li>
+                        <li class="nav-item ml-45">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-face-surprise"></i> Sıra Dışı</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex itiraf-yaz" role="search">
+                        <button class="btn btn-outline-light rounded-pill fst-italic fw-bold montserrat" type="submit"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">İtiraf
+                            Yaz <i class="fa-solid fa-pen-clip"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="content">
+
+        <!--İtiraf paylaşma modalı-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body montserrat">
+                        <div class="title mt-3">
+                            <h2 class="text-muted fw-bold">Hemen Bir İtiriafta Bulun!</h2>
+                            <input type="text" class="form-control text-muted fw-bold p-2" placeholder="Başlık">
+                        </div>
+                        <div class="content mt-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" style="height: 300px;"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea" class="text-muted fw-bold p-2">Mesajını Bırak</label>
+                            </div>
+                        </div>
+                        <div class="modal-tags">
+                            <a href="#"
+                                class="btn btn-outline-secondary p-2 m-3 rounded-pill fst-italic fw-bold">Genel</a>
+                            <a href="#"
+                                class="btn btn-outline-secondary p-2 m-3 rounded-pill fst-italic fw-bold">Aşk</a>
+                            <a href="#"
+                                class="btn btn-outline-secondary p-2 m-3 rounded-pill fst-italic fw-bold">Aile</a>
+                            <a href="#"
+                                class="btn btn-outline-secondary p-2 m-3 rounded-pill fst-italic fw-bold">Arkadaş</a>
+                            <a href="#" class="btn btn-outline-secondary p-2 m-3 rounded-pill fst-italic fw-bold">Sıra
+                                Dışı</a>
+                        </div>
+                        <div class="modal-info-section d-flex justify-content-between">
+                            <div class="yas fw-bold text-muted ">
+                                <h3>Yaş:</h3>
+                                <input type="number" value="18" class="form-control rounded-pill w-50">
+                            </div>
+                            <div class="gender fw-bold text-muted ">
+                                <h3>Cinsiyet:</h3>
+                                <a href="#" class="p-4"><i class="text-muted fa-solid fa-mars fa-2x"></i></a>
+                                <a href="#" class="p-4"><i class="text-muted fa-solid fa-venus fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg-main text-white p-2">Onaya Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--İtiraf paylaşma modalı bitiş-->
+
+        <div class="band"></div>
+        <div class="container" style="margin-top: -80px;">
+            <div class="row" style="margin-left: 70px;">
+                <div class="col-md-4 mb-5">
+                    <div class="card w-75">
+                        <div class="card-head reklam-band bg-secondary" style="height: 200px;"></div>
+                        <div class="card-body montserrat fw-bold text-muted" style="height: 220px;">
+                            Reklam
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card w-75">
+                        <div
+                            class="card-head women p-4 text-white d-flex flex-grid align-items-center justify-content-between">
+                            <h4 class="info">Kadın - 18 Yaşında</h4> <i class="fa-solid fa-venus fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title montserrat fw-bold text-muted">Card title</h5>
+                            <p class="card-text text-muted montserrat fst-italic">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Omnis voluptatem delectus, sit perferendis placeat laboriosam
+                                voluptate reiciendis consectetur ea veniam laborum tenetur iure, cum maxime excepturi
+                                tempora animi in at.</p>
+                        </div>
+                        <div class="action-band p-2 d-flex align-items-center">
+                            <div class="like text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-heart"></i></a>
+                                <div class="text-muted info-tag">3 Beğenme</div>
+                            </div>
+                            <div class="comment text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-comment"></i></a>
+                                <div class="text-muted info-tag">2 Yorum</div>
+                            </div>
+                            <div class="tag text-center">
+                                <span class="rounded-pill text-white etiket">#Aile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card w-75">
+                        <div
+                            class="card-head men p-4 text-white d-flex flex-grid align-items-center justify-content-between">
+                            <h4 class="info">Erkek - 18 Yaşında</h4> <i class="fa-solid fa-venus fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title montserrat fw-bold text-muted">Card title</h5>
+                            <p class="card-text text-muted montserrat fst-italic">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Omnis voluptatem delectus, sit perferendis placeat laboriosam
+                                voluptate reiciendis consectetur ea veniam laborum tenetur iure, cum maxime excepturi
+                                tempora animi in at.</p>
+                        </div>
+                        <div class="action-band p-2 d-flex align-items-center">
+                            <div class="like text-center">
+                                <a href="#" class="text-danger"><i class="fa-regular fa-heart"></i></a>
+                                <div class="text-muted info-tag">2 Beğenme</div>
+                            </div>
+                            <div class="comment text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-comment"></i></a>
+                                <div class="text-muted info-tag">1 Yorum</div>
+                            </div>
+                            <div class="tag text-center">
+                                <span class="rounded-pill text-white etiket">#Aile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card w-75">
+                        <div
+                            class="card-head men p-4 text-white d-flex flex-grid align-items-center justify-content-between">
+                            <h4 class="info">Erkek - 18 Yaşında</h4> <i class="fa-solid fa-venus fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title montserrat fw-bold text-muted">Card title</h5>
+                            <p class="card-text text-muted montserrat fst-italic">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Omnis voluptatem delectus, sit perferendis placeat laboriosam
+                                voluptate reiciendis consectetur ea veniam laborum tenetur iure, cum maxime excepturi
+                                tempora animi in at.</p>
+                        </div>
+                        <div class="action-band p-2 d-flex align-items-center">
+                            <div class="like text-center">
+                                <a href="#" class="text-danger"><i class="fa-regular fa-heart"></i></a>
+                                <div class="text-muted info-tag">2 Beğenme</div>
+                            </div>
+                            <div class="comment text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-comment"></i></a>
+                                <div class="text-muted info-tag">1 Yorum</div>
+                            </div>
+                            <div class="tag text-center">
+                                <span class="rounded-pill text-white etiket">#Aile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card w-75">
+                        <div
+                            class="card-head women p-4 text-white d-flex flex-grid align-items-center justify-content-between">
+                            <h4 class="info">Kadın - 18 Yaşında</h4> <i class="fa-solid fa-venus fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title montserrat fw-bold text-muted">Card title</h5>
+                            <p class="card-text text-muted montserrat fst-italic">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Omnis voluptatem delectus, sit perferendis placeat laboriosam
+                                voluptate reiciendis consectetur ea veniam laborum tenetur iure, cum maxime excepturi
+                                tempora animi in at.</p>
+                        </div>
+                        <div class="action-band p-2 d-flex align-items-center">
+                            <div class="like text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-heart"></i></a>
+                                <div class="text-muted info-tag">3 Beğenme</div>
+                            </div>
+                            <div class="comment text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-comment"></i></a>
+                                <div class="text-muted info-tag">2 Yorum</div>
+                            </div>
+                            <div class="tag text-center">
+                                <span class="rounded-pill text-white etiket">#Aile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card w-75">
+                        <div
+                            class="card-head men p-4 text-white d-flex flex-grid align-items-center justify-content-between">
+                            <h4 class="info">Erkek - 18 Yaşında</h4> <i class="fa-solid fa-venus fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title montserrat fw-bold text-muted">Card title</h5>
+                            <p class="card-text text-muted montserrat fst-italic">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Omnis voluptatem delectus, sit perferendis placeat laboriosam
+                                voluptate reiciendis consectetur ea veniam laborum tenetur iure, cum maxime excepturi
+                                tempora animi in at.</p>
+                        </div>
+                        <div class="action-band p-2 d-flex align-items-center">
+                            <div class="like text-center">
+                                <a href="#" class="text-danger"><i class="fa-regular fa-heart"></i></a>
+                                <div class="text-muted info-tag">2 Beğenme</div>
+                            </div>
+                            <div class="comment text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-comment"></i></a>
+                                <div class="text-muted info-tag">1 Yorum</div>
+                            </div>
+                            <div class="tag text-center">
+                                <span class="rounded-pill text-white etiket">#Aile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card w-75">
+                        <div
+                            class="card-head men p-4 text-white d-flex flex-grid align-items-center justify-content-between">
+                            <h4 class="info">Erkek - 18 Yaşında</h4> <i class="fa-solid fa-venus fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title montserrat fw-bold text-muted">Card title</h5>
+                            <p class="card-text text-muted montserrat fst-italic">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Omnis voluptatem delectus, sit perferendis placeat laboriosam
+                                voluptate reiciendis consectetur ea veniam laborum tenetur iure, cum maxime excepturi
+                                tempora animi in at.</p>
+                        </div>
+                        <div class="action-band p-2 d-flex align-items-center">
+                            <div class="like text-center">
+                                <a href="#" class="text-danger"><i class="fa-regular fa-heart"></i></a>
+                                <div class="text-muted info-tag">2 Beğenme</div>
+                            </div>
+                            <div class="comment text-center">
+                                <a href="#" class="text-secondary"><i class="fa-regular fa-comment"></i></a>
+                                <div class="text-muted info-tag">1 Yorum</div>
+                            </div>
+                            <div class="tag text-center">
+                                <span class="rounded-pill text-white etiket">#Aile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ml-45{
+    margin-left: 45px !important;
+}
+
+.bg-main {
+    background-color: #3D217F !important;
+}
+
+.text-main {
+    color: #3D217F !important;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        display: none !important;
+    }
+    .menu li{
+        margin-left: 5px !important;
+    }
+}
+
+/*header settings*/
+.search-input {
+    background: linear-gradient(90deg, rgba(38,27,65,1) 0%, rgba(68,27,153,1) 100%);
+    border: none;
+    font-style: italic;
+    font-family: montserrat;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.input-icons i {
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 20%;
+    font-size: 22px;
+
+}
+
+/*menu settings*/
+.menu a{
+    font-size: 22px;
+    color: #fff !important;
+    transition: .2s all;
+}
+.menu a:hover{
+    border-bottom:4px solid #fff;
+}
+
+.itiraf-yaz button{
+    font-size: 18px !important;
+    width: 200px;
+}
+
+/*content*/
+.band{
+    height: 130px;
+    background: linear-gradient(90deg, rgba(68,27,153,1) 0%, rgba(38,27,65,1) 100%);
+}
+
+.women{
+    background-color: #A283EA;
+}
+
+.men{
+    background-color: #7D9AF6;
+}
+
+.card{
+    border-radius: 15px 15px 10px 10px;
+    background-color: transparent;
+    box-shadow: 1px 1px 14px 1px black;
+}
+.card-head{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.action-band{
+    background-color: #F3F3F3;
+    border-radius: 15px 15px 10px 10px;
+}
+.action-band .info-tag{
+    font-size: 12px;
+    margin: 10px;
+}
+.action-band .tag{
+    position: absolute;
+    right: 20px;
+}
+.etiket{
+    background-color: #666;
+    font-size: 12px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+/*detay sayfası*/
+.form-comment{
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+/*modal settings*/
