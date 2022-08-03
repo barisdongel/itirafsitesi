@@ -56,7 +56,12 @@
 .menu a:hover{
     border-bottom:4px solid #fff;
 }
-
+.menu a:focus{
+    border-bottom:4px solid #fff;
+}
+.menu a:active{
+    border-bottom:4px solid #fff;
+}
 .navbar-collapse button{
     font-size: 18px !important;
     width: 200px;
@@ -79,7 +84,7 @@
 .card{
     border-radius: 15px 15px 10px 10px;
     background-color: transparent;
-    box-shadow: 1px 1px 14px 1px black;
+    box-shadow: .1px .1px 20px #0f0f0f;
 }
 .card-head{
     border-radius: 15px 15px 0px 0px;
@@ -111,3 +116,13 @@
 }
 
 /*modal settings*/
+.modal-tags a:focus{
+    background-color: #666;
+}
+.modal-info-section .gender a{transition: .2s !important; margin: 10px;}
+.modal-info-section .gender a:hover{
+    background-color: #000 !important;
+}
+.modal-info-section .gender a:focus{
+    background-color: #000 !important;
+}
